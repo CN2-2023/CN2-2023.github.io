@@ -1,1 +1,1099 @@
-Hello Azeem
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Jumeaux numériques et biens culturels</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="fda26c36-f264-45c7-8799-ba9c6297f8a8" class="page sans"><header><h1 class="page-title">Jumeaux numériques et biens culturels</h1></header><div class="page-body"><h1 id="8df14a0b-f237-42b3-b51d-8dcd4b2e391d" class="">Le cas</h1><p id="6a9efce1-0d0f-4c41-be10-029f9c48c0e9" class="">Les jumeaux numériques sont en pleine croissance et permettent d’informatiser des modèles virtuels issue d’objets, oeuvres, ou quelconques objets physiques avec une grande précision. Dans l’art, les domaines d’applications sont multiples. Cela permet tout d’abord de pouvoir préserver les œuvres et de les garder accessibles quoi qu’il advienne aux originaux. </p><p id="36e8b1f1-38d7-430e-a737-f98a299e6966" class="">Combiné aux technologies blockchain et smart contract, il est aussi possible d’envisager la circulation des biens culturels de manière participative (curation collective). En particulier avec l’utilisation de smart contract. </p><p id="aabc6d6b-aa14-4e63-a6a7-42845d662474" class="">
+</p><h2 id="1d59b36c-7c77-4ba3-a230-be69c8a25dc0" class="">La problématique</h2><p id="07955de5-1f1c-4627-8bed-3eb4612a4711" class="">Comment écrire et développer un smart contract dans le domaine des biens culturels et quand est-ce qu’un smart contract est valable et contraignant juridiquement ?</p><h1 id="8d852675-f065-45e0-a152-ed1825697967" class="">Lexique des concepts clés</h1><h2 id="8fdb33a6-fe8a-4259-ad5a-61da541472bc" class="">Biens culturels :</h2><p id="cd9d2cde-7a16-49ea-b73d-af60f6892b9c" class="">Un bien culturel est un bien faisant partie du patrimoine culturel d’un pays tel que des antiquités, des artéfacts archéologiques, manuscrit anciens, monument ou vestiges de monuments historiques, oeuvres d’art, etc... Il peut posséder une grande valeur historique, archéologique, esthétique, artistique, scientifique, ou bien même technique. Ces biens sont souvent protégés (importations illégales, trafics illicites, …) et préservés au vue de leurs grande valeurs culturelle. </p><p id="8b31fff1-cbb1-4800-a200-cea2cffb7af7" class="">
+</p><p id="a5f20c87-a26a-4632-94a3-7c6c42dcd47a" class="">L’article premier de la Convention pour la protection des biens culturels en cas de conflit armé, signée en 1954 à la Haye, nous donne la définition suivante des biens culturels :</p><p id="99aec0a5-f8a3-4bb6-8694-80ed5c1a9d76" class=""><em>« sont considérés comme biens culturels quels que soient leur origine et leur propriétaire : a) les biens, meubles ou immeubles, qui présentent une grande importance pour le patrimoine culturel des peuples… », [monuments, sites archéologiques, œuvres d’art, manuscrits, livres, collections scientifiques, collections d’archives ou de reproductions des biens, etc.]</em></p><p id="f33f68cf-f383-47d8-8996-6787c0f526f4" class=""><em>» b) les édifices dont la destination principale et effective est de conserver ou d’exposer les biens culturels meubles […], c) les centres comprenant un nombre considérable de biens culturels […] ».</em></p><h2 id="05f689de-c7ad-4068-a729-903ae3cc2e2e" class="">Jumeaux Numériques :</h2><p id="7a25dc37-7b4e-4cea-8d9f-db4a1434fb7a" class="">Les jumeaux numériques sont des modèles virtuels qui reproduisent de manière détaillée et précise des objets ou des systèmes réels, en utilisant des technologies de modélisation 3D, d&#x27;imagerie et de simulation.</p><p id="1c7bbedd-14e3-4f64-9867-229bb2881ccc" class="">Dans le contexte des biens culturels, les jumeaux numériques sont utilisés pour préserver et documenter des artefacts historiques, artistiques et culturels. Les musées et les institutions patrimoniales peuvent créer des jumeaux numériques de pièces de collection et de sites archéologiques, afin de les rendre accessibles au public et de préserver leur état actuel.</p><p id="7bc3f1eb-8f5d-4270-8bde-7c72ae1e90c6" class="">Les jumeaux numériques peuvent également être utilisés pour la recherche et l&#x27;éducation, en permettant aux scientifiques, aux historiens et aux étudiants d&#x27;explorer virtuellement des artefacts et des sites sans avoir besoin de les manipuler physiquement.</p><p id="43c08c38-ebd8-4c66-94ca-fc4e6f93fb9f" class="">En outre, les jumeaux numériques peuvent être utilisés pour la restauration et la conservation des biens culturels. En créant un modèle virtuel précis d&#x27;un objet endommagé, les restaurateurs peuvent expérimenter différentes techniques de réparation et de conservation pour déterminer la meilleure approche avant de procéder à des interventions physiques.</p><p id="625ad37f-2964-43d5-9b97-0727b5f87aea" class="">Enfin, les jumeaux numériques peuvent être utilisés pour la reproduction d&#x27;objets culturels. En créant un modèle 3D précis d&#x27;un objet, il est possible de le reproduire en utilisant des technologies telles que l&#x27;impression 3D, ce qui permet de créer des répliques exactes pour la recherche et l&#x27;exposition dans les musées et les galeries d&#x27;art.</p><p id="de004f53-0ab4-456b-b5d7-94f419fe2701" class="">
+</p><p id="d23d6ced-c896-426a-b4f3-a97b88833b5b" class="">
+</p><h2 id="fb8effb8-eb07-4a82-ad41-5605cf47d500" class="">Blockchain :</h2><p id="77f48b80-7cfd-45d9-bfd7-630e4d975757" class="">La blockchain est une technologie de stockage et de transmission d&#x27;informations, transparente, sécurisée et fonctionnant sans organe central de contrôle. Elle prend la forme d&#x27;une base de données distribuée et contient une liste d&#x27;opérations (ou transactions) groupées en blocs, qui sont liés les uns aux autres de manière sécurisée et ordonnée.</p><p id="d951a7fa-a375-4224-8aa5-eecdbfe80d27" class="">Ethereum est une plateforme décentralisée de blockchain, spécialement conçue pour permettre la création et l&#x27;exécution de &quot;smart contracts&quot; (contrats intelligents). Un smart contract est un programme informatique qui permet d&#x27;exécuter automatiquement des actions ou des transactions selon des conditions prédéfinies, sans avoir besoin d&#x27;une autorité centrale ou d&#x27;un intermédiaire.</p><p id="e623d928-8353-45ab-b223-b62ec788c73d" class="">
+</p><h2 id="2ddd189c-81d8-4d60-b438-e1b95c8401b7" class="">Smart Contract :</h2><p id="357910bb-5a8a-478d-97ec-82305c031606" class="">Les smart contracts sont des protocoles informatiques qui facilitent, vérifient et exécutent automatiquement des contrats sur une blockchain, éliminant ainsi le besoin d&#x27;un intermédiaire. Ils sont auto-exécutables, transparents et décentralisés, ce qui signifie qu&#x27;aucune autorité centrale n&#x27;est requise pour les valider ou les superviser.</p><p id="d568c238-d35a-4c03-94c2-6bb67d459038" class="">Dans le contexte des biens culturels, les smart contracts offrent une solution pour assurer la traçabilité, la provenance et la gestion des droits d&#x27;auteur des jumeaux numériques. De plus, ils peuvent permettre de mettre en place un système de curation collective, où les participants ont la possibilité de voter sur des décisions relatives à la gestion et à la distribution des œuvres d&#x27;art numérisées.</p><p id="8d786749-86fb-451c-9f62-bf538a355362" class="">Cependant, l&#x27;utilisation de smart contracts pour les biens culturels soulève des questions juridiques, notamment en ce qui concerne leur validité et leur force contraignante. Pour être considéré comme légalement contraignant, un smart contract doit respecter les principes généraux du droit des contrats, tels que l&#x27;offre, l&#x27;acceptation, la contrepartie, la capacité des parties à contracter et l&#x27;objet du contrat.</p><p id="e27ba7b1-d321-4fa3-80c2-96d7ce294bbb" class="">Il est important de souligner que les lois relatives aux contrats varient d&#x27;une juridiction à l&#x27;autre, et les smart contracts pourraient ne pas être reconnus comme légalement contraignants dans certaines régions. Une attention particulière doit donc être accordée à la conformité avec les lois et réglementations locales pour garantir que les smart contracts soient valables et contraignants d&#x27;un point de vue juridique.</p><p id="94e7274f-afa3-4196-8d26-f3c079aaaab6" class="">
+</p><p id="d81a2e77-ec55-4043-8814-82f59020b06d" class="">
+</p><h1 id="bfd50222-9bbd-4e6b-b87b-8cbe85c91cd3" class="">Le Livrable</h1><p id="329eea65-9f59-469a-98e0-56574c210824" class="">En guise de livrable, nous avons décidé d’utiliser Github pages, qui nous permet de mettre en ligne une page web. </p><p id="2b4414c3-2d1d-41f0-a9e3-6f9774890910" class="">Elle contiendra une description du projet et des concepts clés, mais aussi une “guide line” permettant d’avoir toutes les étapes pour créer et déployer un smart contract sur une blockchain. Elle contiendra aussi un exemple ou template de smart contract basique ainsi que les articles de lois choisit et les explications concernant ce choix de législation.</p><p id="77aa839a-b89a-47be-8402-a31de69a9da8" class="">Cette page nous permettra donc de tout regrouper sur une seule page de sorte à ce qu’un utilisateur qui souhaiterait utiliser notre travail, puisse le faire le plus facilement possible.</p><p id="6f597f92-1c0c-40e9-85fe-f8e76e9982d0" class="">
+</p><h1 id="14a23cc6-0136-4a33-8907-f592b07cf514" class="">Contrat Juridique</h1><p id="fe308c0c-4518-4979-a07e-07f231c1bf1a" class="">Après avoir défini les 2 grands thèmes à aborder, qui sont la validité du contrat ainsi que les droits et obligations liés au token, nous avons établi une liste d&#x27;articles régissant différentes conditions pour l’application du smart contract.</p><p id="cbdd9830-2692-4417-8e36-415796101a66" class="">
+</p><p id="b924ae75-5539-4a77-9eca-5ec6394cdc04" class="">Les articles sont présentés ci-dessous:</p><p id="b74560fe-e507-427b-9a95-8d78efe37f41" class="">
+</p><h3 id="2382f591-888d-4acf-b2ae-c95734e25594" class="">1. La validité du contrat</h3><p id="c749ad73-6e69-4f8c-8943-00de65d30866" class="">
+</p><p id="725ebf9b-e63e-4d95-a4d3-b176c77dc2ad" class=""><strong>La validité du smart contract</strong></p><p id="8612be53-44dc-44e5-8005-59f3876984e0" class="">Article 1 : “Les parties conviennent que le présent smart contract est valable et exécutoire dans la mesure où il est conforme aux dispositions légales applicables en matière de contrats, notamment en ce qui concerne la liberté contractuelle et la bonne foi. Les parties reconnaissent que le smart contract est un outil automatisé, qui ne peut être modifié après sa mise en place. Par conséquent, les parties s&#x27;engagent à fournir toutes les informations nécessaires à la conclusion du contrat de manière claire, précise et exhaustive, et à respecter les termes du contrat dans la mesure où ils sont conformes à la loi et à la bonne foi. Les parties reconnaissent également que toute modification ou résolution du contrat ne peut intervenir qu&#x27;avec le consentement mutuel et express des parties concernées, et dans le respect des dispositions légales applicables.&quot;</p><p id="a0e2431f-fc0d-4bf5-8e26-9a184cf9da31" class="">
+</p><p id="835c6c19-7a5c-48e6-86bc-29bc44344db0" class=""><strong>Que faire en cas d’offre entre absents ?</strong></p><p id="9468649a-7bb6-4f01-9fd7-4357a8ef80b9" class="">Article 2 : « En cas d’offre entre absents, l’acceptation sera considérée comme étant parvenue à l’offrant au moment où elle est enregistrée sur la blockchain. (art 5 CO)
+Si l’offrant fixe un délai pour l’acceptation, l’acceptation doit être enregistrée sur la blockchain avant l’expiration du délai pour être valable.
+Si l’acceptation est enregistrée dans les délais, mais qu’elle n’arrive pas à temps en raison de circonstances indépendantes de la volonté de l’acceptant, l’acceptation sera considérée comme valable si elle est enregistrée sur la blockchain sans délai après la fin des circonstances ».
+Pourquoi un droit contractuel et pas un droit valeur ?</p><p id="f6a748f6-4c5b-42bb-a73f-b481c01ea03f" class="">Article 3 : “L&#x27;acquéreur reconnaît et accepte que l&#x27;acquisition d&#x27;un token ne sera pas considérée comme une transaction de transfert de propriété selon les dispositions du droit suisse. Étant donné que l&#x27;œuvre numérique est une chose non tangible, la propriété sur cette dernière ne peut être transférée qu&#x27;à travers un droit contractuel enregistré sur la blockchain, en accord avec les dispositions spécifiques prévues dans le contrat. L&#x27;acheteur comprend également que l&#x27;acquisition d&#x27;un token confère uniquement des droits limités sur l&#x27;œuvre numérique, qui sont spécifiés dans le contrat. En conséquence, l&#x27;acheteur reconnaît que la propriété de l&#x27;œuvre numérique reste la propriété de l&#x27;artiste ou de l&#x27;entité propriétaire, et que l&#x27;acheteur n&#x27;a aucun droit de propriété sur l&#x27;œuvre en dehors des droits limités conférés par l&#x27;achat de tokens, en accord avec les termes du contrat.
+Par exemple, un acheteur acquiert un token représentant une œuvre numérique via une plateforme de vente en ligne. Ce token lui confère des droits limités sur l&#x27;œuvre numérique, tels que le droit de le transférer à un tiers ou le droit de le détenir à des fins de spéculation. Cependant, l&#x27;acheteur comprend que l&#x27;acquisition de ce token ne lui confère pas le droit de propriété sur l&#x27;œuvre numérique elle-même, mais uniquement sur les droits spécifiques mentionnés dans le contrat. La propriété de l&#x27;œuvre numérique reste donc la propriété de l&#x27;artiste ou de l&#x27;entité propriétaire, et l&#x27;acheteur n&#x27;a aucun droit de propriété sur l&#x27;œuvre en dehors des droits limités conférés par l&#x27;achat de tokens, en accord avec les termes du contrat.”</p><p id="c2619331-92a8-4187-8dde-b232225cea1d" class="">
+</p><h3 id="c3f05a59-2ed5-4295-8b8b-9d4fde87bdd0" class="">2. Droits et obligations liés au token - Enjeux éthiques</h3><p id="011c5a88-8bc0-446d-b17d-7f9d7c0b20e1" class="">
+</p><p id="42cbe2a7-0bfb-4e0b-b0cd-3f59a1167dc5" class=""><strong>Acquisition d’un token</strong></p><p id="e24237bb-d39d-4343-b8a3-68e9b6a374f8" class="">Article 4 : “L&#x27;acquéreur reconnaît et accepte que l&#x27;acquisition du jumeau numérique ne peut se faire que par l&#x27;achat de token. Les tokens acquis représentent une partie de la propriété de l&#x27;œuvre numérique et confèrent à l&#x27;acquéreur des droits limités sur cette œuvre. L&#x27;acheteur comprend également que l&#x27;acquisition de tokens ne lui confère pas le droit de modifier ou de copier l&#x27;œuvre originale. Les tokens ne peuvent être utilisés qu&#x27;à des fins de détention de propriété. L&#x27;acheteur reconnaît et accepte que la propriété de l&#x27;œuvre numérique reste la propriété de l&#x27;artiste ou de l&#x27;entité propriétaire, et que l&#x27;acheteur n&#x27;a aucun droit de propriété sur l&#x27;œuvre en dehors des droits limités conférés par l&#x27;achat de tokens.”</p><p id="5af3e057-4b66-4f51-ba98-3fc2343495df" class="">
+</p><p id="5b0f2ad8-9e62-428a-8547-b63115da6e60" class=""><strong>Clause de responsabilité</strong></p><p id="0cc59bd1-765f-4b18-9635-0bc0fc5e90db" class="">Article 5 : “Les parties conviennent que le smart contract contenant le token est fourni tel quel, sans garantie d&#x27;aucune sorte, expresse ou implicite, y compris, mais sans s&#x27;y limiter, les garanties de qualité marchande, d&#x27;adéquation à un usage particulier et de non-contrefaçon.
+Les parties conviennent que le fournisseur du smart contrat ne sera pas responsable des dommages directs, indirects, accessoires, spéciaux, exemplaires ou consécutifs résultant de l&#x27;utilisation ou de l&#x27;impossibilité d&#x27;utiliser le smart contract contenant le token, même si le fournisseur du smart contract a été informé de la possibilité de tels dommages.
+Les parties conviennent que la responsabilité du fournisseur du smart contract pour toute réclamation découlant de ou liée à ce contrat ne dépassera pas le montant payé par l&#x27;utilisateur pour l&#x27;utilisation du smart contract contenant le token.
+Les parties conviennent que le fournisseur du smart contract ne sera pas responsable de toute violation des lois ou réglementations applicables par l&#x27;utilisateur.
+Les parties conviennent que le fournisseur du smart contract n&#x27;est pas responsable de la perte ou de la destruction du token résultant de l&#x27;utilisation du smart contract, y compris, mais sans s&#x27;y limiter, en cas d&#x27;erreur de manipulation ou de piratage.
+En acceptant d&#x27;utiliser le smart contract contenant le token, l&#x27;utilisateur reconnaît avoir lu, compris et accepté les termes de cette clause de responsabilité”.</p><p id="eb88ffc1-9c0d-4bdb-9853-9192ee1782f7" class="">
+</p><p id="35f54db0-fb9a-4a92-b1b2-e5448384b146" class=""><strong>Lorsqu’une œuvre est rénovée après numérisation ?</strong></p><p id="3e1a91bd-e650-44c5-8fd6-a57ead42ccb3" class="">Article 6 : “En cas de rénovation de l&#x27;œuvre numérique, par exemple une mise à jour majeure de la plateforme d&#x27;hébergement de l&#x27;œuvre numérique ou l&#x27;ajout de nouvelles fonctionnalités interactives, le propriétaire d&#x27;un token se verra automatiquement attribuer une mise à jour de son token, sans coût supplémentaire, pour autant que cette rénovation soit de nature à affecter la valeur ou les caractéristiques essentielles de l&#x27;œuvre numérique. Les parties conviennent que la rénovation est considérée comme affectant la valeur ou les caractéristiques essentielles de l&#x27;œuvre numérique si elle entraîne une modification substantielle de l&#x27;œuvre numérique ou de ses fonctionnalités, ou si elle a un impact significatif sur la performance ou la qualité de l&#x27;œuvre numérique. En cas de rénovation, le propriétaire du token sera informé de la mise à jour et de ses caractéristiques. Par exemple, si un artiste numérique décide d&#x27;ajouter une nouvelle couche de complexité à l&#x27;œuvre numérique en y intégrant une dimension interactive, les propriétaires de tokens seront automatiquement mis à jour sans frais supplémentaires.”</p><p id="373d9358-9d00-455e-ac58-5b48d6dde0af" class="">
+</p><p id="df2461b3-0850-4994-a29a-0e03e29b3844" class=""><strong>Quid en cas de refus d’actualisation du token ?</strong>
+Article 7 : “Le propriétaire du token s&#x27;engage à accepter ces mises à jour ou rénovations, sans droit de veto ou de refus. Le propriétaire du token reconnaît que le refus de mettre à jour ou de rénover l&#x27;œuvre numérique peut avoir un impact sur la valeur et la pertinence de son token, et accepte de prendre tous les risques associés à ce refus. Ainsi, dans l&#x27;exemple précédent de l&#x27;artiste numérique qui ajoute une dimension interactive à l&#x27;œuvre numérique, le propriétaire du token ne peut pas refuser la mise à jour sans compromettre la valeur de son token. De même, si une rénovation majeure est effectuée sur la plateforme d&#x27;hébergement de l&#x27;œuvre numérique pour améliorer la sécurité ou la convivialité, le propriétaire du token ne peut pas s&#x27;opposer à la mise à jour sans prendre le risque de voir la pertinence de son token diminuer.
+En acceptant cette clause, le propriétaire du token reconnaît que les mises à jour et les rénovations sont nécessaires pour assurer la qualité et la pertinence à long terme de l&#x27;œuvre numérique, et qu&#x27;il doit accepter les conséquences de son refus de mettre à jour ou de rénover son token.”</p><p id="03402117-982d-40a6-915a-51fd37b3dff5" class="">
+</p><p id="b0f5a609-f57e-4f17-b986-5929c124a8c0" class=""><strong>Limitation du nombre de tokens</strong></p><p id="7213dd3b-87c7-4af9-8686-05c6b5e50024" class="">Article 8 : &quot;Les parties reconnaissent et acceptent que chaque personne physique ne peut posséder qu&#x27;un seul token représentant l&#x27;œuvre numérique [X]. Ainsi, si un acheteur achète un token représentant l&#x27;œuvre numérique [X], il ne pourra pas acquérir un autre token représentant cette même œuvre. Si l’acheteur tente de posséder plusieurs tokens représentant l&#x27;œuvre numérique [X] en utilisant des identités différentes, cela sera considéré comme une violation du contrat. Dans ce cas, l’acheteur pourra être sujet à des mesures disciplinaires, telles que la résiliation du contrat et la révocation de tous les tokens détenus par cette personne. Les parties conviennent également de prendre toutes les mesures raisonnables pour empêcher toute tentative de fraude ou d&#x27;usurpation d&#x27;identité en lien avec la possession de tokens.&quot;</p><p id="200f881e-6ca0-411c-a867-204809459159" class="">
+</p><p id="3417a94f-8b48-4ce8-95f4-1afc5c33f1e5" class=""><strong>Registre des propriétaires/Identification des propriétaires</strong></p><p id="3e995675-d0d1-4712-b79f-c0853bdc9f16" class="">Article 9 : “Il est convenu que l&#x27;acquéreur consente et admette que toutes les transactions de jetons soient consignées sur la blockchain. Les informations consignées incluront l&#x27;identité de l&#x27;acheteur, la quantité de jetons acquis et la date de la transaction. Ces données seront disponibles publiquement, permettant de conserver un registre chronologique de tous les propriétaires du jeton depuis sa création. L&#x27;acquéreur est également conscient que ces informations ne peuvent être effacées ou modifiées de manière rétroactive sur la blockchain. Il doit reconnaître que ces informations sont accessibles à tous les utilisateurs de la blockchain, mais que son identité peut être protégée en utilisant un pseudonyme ou une adresse électronique non identifiable.
+En outre, il est accepté que le propriétaire initial de l&#x27;œuvre numérique soit responsable de la mise à jour du registre des propriétaires de jetons, et qu&#x27;il puisse engager un tiers pour accomplir cette tâche.
+Il convient d&#x27;ajouter que le registre sera tenu par le musée où l&#x27;œuvre numérique est exposée, conformément aux termes et conditions régissant l&#x27;exposition de l&#x27;œuvre. Le musée veillera à ce que le registre soit tenu à jour et que les informations relatives aux propriétaires de jetons soient accessibles au public conformément aux lois et réglementations applicables en la matière. L&#x27;acquéreur est invité à prendre connaissance de ces termes et conditions avant d&#x27;acheter le jeton.”</p><p id="81d580c6-e8c5-420f-97be-85194b770047" class="">
+</p><p id="7661885a-6cb0-47ae-b103-a6420e66f02e" class=""><strong>Clause en cas de litige</strong></p><p id="e1d18e27-0749-4db4-a63b-aa336dfb456c" class="">Article 10 : “Tout litige résultant de l&#x27;interprétation, de l&#x27;exécution ou de la résiliation du présent contrat relatif aux tokens dans le smart contrat sera régi par le présent contrat. Si le litige concerne deux acquéreurs, le musée qui a numérisé le jumeau numérique sera compétent pour résoudre le litige. Toutefois, si le musée est partie au litige, alors c&#x27;est le Centre d&#x27;arbitrage et de médiation de l&#x27;Organisation Mondiale de la Propriété Intellectuelle (OMPI) qui sera compétent pour résoudre le litige. Les parties conviennent également de s&#x27;efforcer de résoudre tout différend de manière amiable.”</p><p id="a94b31b6-1164-43d2-9e83-1b673ca866d0" class="">
+</p><p id="f48432fc-8e76-4e64-96ca-ca604ce2d0a0" class=""><strong>Le droit de vote ?</strong></p><p id="f7dff68c-af2c-4eaa-964a-97c194542119" class="">Article 11 : “Le DAO permettra aux détenteurs de jetons de voter pour les décisions importantes concernant les activités du DAO. Les décisions importantes incluent, sans s’y limiter, l’adoption de propositions, la modification des statuts du DAO, la distribution de fonds et toutes autres décisions jugées importantes par [...]. Les détenteurs de jetons recevront un nombre de voix proportionnel à leur participation dans le DAO et seront effectifs après avoir atteint un seuil de participation minimum, qui sera déterminé par [...]. Les décisions seront adoptées si une majorité simple de tous les votes exprimés est atteinte”.</p><p id="60eb9d2f-50c6-4334-9647-ec7b54def508" class="">
+</p><p id="c5ae4542-3a52-40d1-8622-fc821604e9ac" class=""><strong>Le savoir-faire culturel</strong></p><p id="1cf1a0c5-5c62-493c-813c-be2012019939" class="">Article 12 : “Il est stipulé que tous les propriétaires de jetons liés à l&#x27;œuvre culturelle reconnaissent et acceptent que le savoir-faire culturel associé à l&#x27;œuvre doit être reconnu et respecté en tout temps. Bien que les propriétaires de jetons aient des droits de vote sur l&#x27;œuvre, ceux-ci ne peuvent pas remettre en cause ou altérer le savoir-faire culturel qui lui est associé. Les propriétaires de jetons sont conscients que le savoir-faire culturel est immuable et qu&#x27;il doit être préservé pour les générations futures.
+Les propriétaires de jetons doivent comprendre que leur possession de jetons ne leur confère aucun droit de propriété sur le savoir-faire culturel associé à l&#x27;œuvre. Ils doivent respecter et reconnaître que le savoir-faire culturel appartient aux peuples et aux communautés qui l&#x27;ont créé, et qu&#x27;il est protégé par les lois et réglementations applicables en la matière.
+En conséquence, les propriétaires de jetons sont tenus de s&#x27;engager à préserver et à promouvoir le savoir-faire culturel associé à l&#x27;œuvre, dans le respect de la culture, des traditions et des coutumes des peuples et des communautés concernés. Ils doivent également s&#x27;engager à ne pas utiliser l&#x27;œuvre de manière inappropriée ou offensante pour les peuples et les communautés concernés.”</p><p id="a2907792-e215-4229-be85-f64a6d214ae7" class="">Reversement des revenus/dividendes</p><p id="8c237ec7-0b02-4e9b-af08-968657027313" class="">Article 13 : “Les parties au contrat reconnaissent et acceptent que tout revenu ou dividende généré par l&#x27;exploitation ou la vente des tokens représentant des biens culturels numériques ne sera pas distribué directement aux détenteurs de tokens.
+Au lieu de cela, les revenus ou dividendes seront reversés à un organisme de numérisation désigné par les parties au contrat. Cet organisme aura pour mission de financer et de soutenir des projets de numérisation d&#x27;œuvres culturelles, ainsi que de promouvoir l&#x27;accès à la culture numérique pour tous.
+Les parties conviennent que les modalités exactes du reversement des revenus ou dividendes à l&#x27;organisme de numérisation seront définies dans un accord séparé, qui sera intégré au présent contrat par référence.
+Les détenteurs de tokens acceptent que leur acquisition de tokens ne leur donne aucun droit sur les revenus ou dividendes générés par l&#x27;exploitation ou la vente des tokens. Ils reconnaissent que leur achat de tokens est un soutien à la numérisation et à l&#x27;accès à la culture numérique pour tous, et non une transaction d&#x27;investissement ou de spéculation financière.”</p><p id="0f74a0ec-faa4-4114-b4ce-4caccf2c55d6" class="">
+</p><p id="8074df2d-5c0c-499a-9cd9-32784a008f9e" class=""><strong>Clause pénale</strong></p><p id="ddea0cc9-de44-4e0e-b9ad-a0d16b1cd7e6" class="">Article 14 :  “En cas de violation du contrat, [...] pourra demander à [...] un montant de [...] au titre de clause pénale, tout autre moyen de droit étant réservé.”</p><p id="a37b4b74-6035-40dd-9589-f66a64c75fd0" class="">
+</p><hr id="6a62a650-02ad-4e8c-ac34-7eb9400aeeb4"/><h1 id="03896592-be3f-4293-a26b-5482434705a6" class="">Smart Contract</h1><h2 id="eb704f00-684a-4f58-926b-0b3b443fdc8f" class="">Architecture choisie</h2><p id="df8a4ec1-fe39-478f-ad3a-3f1d70667da9" class="">L’architecture que nous avons choisie est illustrée dans l’image suivante :</p><figure id="3aa1e915-0d90-4c94-84b0-ef38124d8695" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled.png"><img style="width:1062px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled.png"/></a></figure><p id="97ce13c9-32e6-4276-b248-cf9d0b3a473a" class="">
+</p><ol type="1" id="20a4a54a-8dd7-4062-8b6a-35c71f5e52f7" class="numbered-list" start="1"><li><a href="http://remix.ethereum.org/">Remix</a> est une plateforme qui permet de facilement implémenter, tester et déployer des smart contracts.</li></ol><ol type="1" id="8e419bc5-ea93-4a90-8735-6229af2807bb" class="numbered-list" start="2"><li><a href="https://www.tally.xyz/">Tally</a> et <a href="https://www.notion.sodefender.openzeppelin.com/">Defender</a>: Tally est une plateforme de gouvernance blockchain pour les DAOs, tandis que Defender fournit des outils pour la gestion des smart contracts. Tally permet aux membres de voter sur les propositions à l&#x27;aide de leurs tokens, tandis que Defender fournit des outils pour les développeurs pour construire, déployer et gérer des smart contracts. Il permet aussi aux utilisateurs d’interagir avec les smart contracts. </li></ol><ol type="1" id="ee613466-8234-4177-8cdb-8a22122619a3" class="numbered-list" start="3"><li><a href="https://docs.soliditylang.org/en/v0.8.20/">Solidity</a> est le language de programmation dédié aux smart contract.</li></ol><ol type="1" id="efdb8232-133b-4f72-8f5b-c765a0cbb4a5" class="numbered-list" start="4"><li><a href="https://www.openzeppelin.com/">OpenZeppelin</a> est un librairie informatique, permettant d’assister ses utilisateurs à la création de leurs smart contracts. Il est plutôt très commun en informatique de ne pas ré-inventer la roue. C’est ce que nous permet de faire cette librairie : ne pas ré-implémenter tout le code mais de ré-utiliser le sien. De plus cela permet d’éviter de créer des failles de sécurité ou bien même de produire un code moins efficace et rapide. OpenZeppelin nous octroie une sécurité accrue pour nos smart contracts.</li></ol><ol type="1" id="b9792b57-dad6-4fe1-8464-698836828cee" class="numbered-list" start="5"><li>Dans le coin inférieur droit, nous avons d’abord <a href="https://ipfs.tech/">IPFS</a><strong> </strong>qui propose un service de stockage et de partage de fichier décentralisée, et donc nul besoin de passer par un serveur central comme le fait HTTP. Mais nous pouvons aller plus loin! Pour garantir la sécurité et une persistence des fichiers sur IPFS, <a href="https://www.pinata.cloud/">Piñata</a> est un autre service de <em><em><em><em><em><em>backup</em></em></em></em></em></em> qui nous permet aussi d’utiliser plus facilement IPFS</li></ol><p id="51d863e4-b3f0-4923-9fb3-ed0f98c7384f" class="">
+</p><h2 id="876e24da-c2b7-4492-a340-decaf1197b62" class="">Création du Token smart contract</h2><p id="61b728f3-8284-4400-92c1-6520c67a0bd1" class="">Pour coder un smart contract, nous allons utiliser le langage de programmation <a href="https://docs.soliditylang.org/fr/latest/">Solidity</a>.</p><p id="356951c5-1d60-4ae1-aa92-5d5c0d65b0e1" class="">Pour implémenter les fonctionnalités requises il est important de se renseigner sur ce qui existe déjà et d’utiliser des <em>librairies </em>existantes. Les librairies sont généralement à la fois plus sûre et efficiente que de partir de zéro. C’est d’autant plus important pour les smarts contracts pour lesquelles la sécurité et le coût d’opération sont primordiaux.</p><p id="8b8ad5fa-9b42-4b06-987d-a169ec26d6af" class="">Une librairie populaire est <a href="https://www.openzeppelin.com/">OpenZeppelin</a>, qui notamment possède des modules pour gérer le système de votation (voir <a href="https://docs.openzeppelin.com/contracts/4.x/api/governance">Governance</a>). Leurs contrats suivent des standards reconnus qui peuvent être intégrés facilement à d’autres applications.</p><p id="dd6c3b02-83d0-4dcf-83b2-2cae237112c2" class="">Ils possèdent également un générateur intégrer le <a href="https://www.notion.sowizard.openzeppelin.com/"><em>Contracts Wizard</em></a><a href="https://www.notion.sowizard.openzeppelin.com/"><em><strong> </strong></em></a>permettant de créer des templates simples.</p><p id="8cef2dfa-a61d-45d1-b139-6911353a108f" class="">En utilisant le <em><em><em><em>wizard</em></em></em></em> fournit par OpenZeppelin, nous pouvons facilement créer un smart contract. Nous allons donc d’abord nous rendre sur ce site <a href="https://wizard.openzeppelin.com/#erc721">Wizard</a>. Vérifiez que c’est bien le protocole ERC721 qui est sélectionné.</p><p id="276b2dfc-e3b7-4455-b646-67d6d447c3e8" class="">Nous avons privilégié le choix du protocole ERC721 (qui sont des NFT) au protocole ERC20 car celui-ci nous fournit plus de libertés sur les tokens créés (comme par exemple récupérer un token sans le consentement). Dans les explications qui suivent le mot token sera employé mais notez bien que ces tokens sont en réalité des NFT.</p><p id="c3ab13a2-44bf-49e1-bd3c-41ff09f91dc1" class="">
+</p><figure id="90aa08be-793c-4a22-87df-0dd1b4876723" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%201.png"><img style="width:1227px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%201.png"/></a></figure><p id="0c4d2bbd-cfb8-4660-bf76-d42fc4b6eaaa" class="">
+</p><p id="360f0adc-93f7-4adf-a204-70daa5a9f094" class="">Dans la colonne de gauche plusieurs choix s’offrent à nous. Cependant, dans notre cas nous allons simplement utiliser:</p><ul id="e4569795-b73e-453e-a531-ce92ec8b0f60" class="bulleted-list"><li style="list-style-type:disc">Mintable: Permet de pouvoir créer des tokens en plus après le déploiement.<ul id="5f5c86d5-7e27-4343-8f27-f83587ffb5f6" class="bulleted-list"><li style="list-style-type:circle">Auto Incremend Ids: Permet de créer des token avec un mécanisme qui génère automatiquement un unique ID pour les token.</li></ul></li></ul><ul id="3cf0f764-99d3-4366-95be-bbdf17f5e814" class="bulleted-list"><li style="list-style-type:disc">Pausable: Permet de “mettre en pause” le smart contrat en cas de problème</li></ul><ul id="f28a0511-1c1b-45c8-b963-96d50395b49c" class="bulleted-list"><li style="list-style-type:disc">Votes: Permet aux détenteurs de token de les utiliser afin de voter. Ils pourront aussi déléguer leurs votes à d’autres détenteurs de jetons.</li></ul><ul id="fd0d57f1-fd6b-4c3e-8c7d-062c71389981" class="bulleted-list"><li style="list-style-type:disc">Ownable: Il s’agit d’un méchanisme où un unique compte est autorisé à exécuter toutes les fonctions requérent un accès privilégier.</li></ul><p id="ba0045e6-83dc-4ff2-8c2e-2f25f983698f" class="">
+</p><p id="ab9b04b4-67ee-43ff-8c10-47a88c3702bf" class="">Voici le code du smart contract pour le token. Il y a plusieurs champs à modifier selon les besoins. </p><ul id="86726aae-6638-460a-8bcf-50a660891c2f" class="bulleted-list"><li style="list-style-type:disc">_name: mettez le nom du token que vous souhaitez</li></ul><ul id="ac236dff-5726-4838-962e-beecdb10c921" class="bulleted-list"><li style="list-style-type:disc">_symbol: mettez l’abréviation (3 lettres!) du token que vous souhaitez</li></ul><ul id="7e31559f-c403-4fea-a80d-a48c78dceb61" class="bulleted-list"><li style="list-style-type:disc">MAX_TOKEN_CIRCULATION: Le nombre de token que vous souhaitez avoir au maximum de disponible.</li></ul><ul id="36581f64-0de2-477a-bc76-075f49e6f818" class="bulleted-list"><li style="list-style-type:disc">VALUE_PER_TOKEN: La valeur à laquelle vous voulez vendre chaque token</li></ul><ul id="c6a7c951-4fc6-43dd-aa5a-31a100074380" class="bulleted-list"><li style="list-style-type:disc">FEE_AMOUNT: La taxe (en pourcentage) qui sera donnée au créateur.</li></ul><pre id="e1c5d4ec-f97b-4939-8283-2d68b63be70f" class="code"><code>// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import &quot;@openzeppelin/contracts/token/ERC721/ERC721.sol&quot;;
+import &quot;@openzeppelin/contracts/security/Pausable.sol&quot;;
+import &quot;@openzeppelin/contracts/access/Ownable.sol&quot;;
+import &quot;@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol&quot;;
+import &quot;@openzeppelin/contracts/token/ERC721/extensions/draft-ERC721Votes.sol&quot;;
+import &quot;@openzeppelin/contracts/utils/Counters.sol&quot;;
+
+contract MyToken is ERC721, Pausable, Ownable, EIP712, ERC721Votes {
+    using Counters for Counters.Counter;
+
+    Counters.Counter private _tokenIdCounter;
+
+    // Name of the token and its symbol
+    string private _name = &quot;MyFinalToken&quot;;
+    string private _symbol = &quot;MFT&quot;;
+
+    // number of pre-minted tokens
+    uint256 public constant MAX_TOKEN_CIRCULATION = 2;
+
+    // Value of each token to be sold in eth
+    uint256 public VALUE_PER_TOKEN = 0.001 ether;
+
+    // Fee amount to be paid to the owner on each sale (10% of the sale price)
+    uint256 public FEE_AMOUNT = 10;
+
+    // Keep track of the token balances of each address
+    mapping(address =&gt; uint256) private _tokenBalances;
+
+    // Mapping to store prices of tokens put on sale
+    mapping(uint256 =&gt; uint256) public tokenPrices;
+
+    // Mapping to store approved buyers for each token
+    mapping(uint256 =&gt; address) public tokenBuyers;
+
+    // Contract web page or IPFS file
+    string private _lawContract;
+
+    // Digital Twin file url or IPFS file
+    string private _digitalTwin;
+
+
+    constructor(string memory lawContract, string memory digitalTwin) ERC721(_name, _symbol) EIP712(_name, &quot;1&quot;) {
+        // set the base URI
+        _lawContract = lawContract;
+        _digitalTwin = digitalTwin;
+    }
+
+    // Getter function to return the _lawContract
+    function getlawContract() public view returns (string memory) {
+        return _lawContract;
+    }
+
+    // Setter function to change the _lawContract. Only callable by the owner.
+    function setlawContract(string memory newLawContract) public onlyOwner {
+        _lawContract = newLawContract;
+    }
+
+    // Getter function to return the contractWebPage
+    function getDigitalTwin() public view returns (string memory) {
+        return _digitalTwin;
+    }
+
+    // Setter function to change the contractWebPage. Only callable by the owner.
+    function setDigitalTwin(string memory newDigitalTwin) public onlyOwner {
+        _digitalTwin = newDigitalTwin;
+    }
+
+   
+
+    function buyToken() external payable {
+        // check if the payment is sufficient
+        require(msg.value &gt;= VALUE_PER_TOKEN, &quot;Insufficient payment&quot;);
+        
+        // check if the token supply has reached the maximum
+        require(_tokenIdCounter.current() &lt;= MAX_TOKEN_CIRCULATION, &quot;Token supply has reached the maximum&quot;);
+
+        // check if the buyer has already bought a token
+        require(_tokenBalances[msg.sender] == 0, &quot;You have already bought a token&quot;);
+
+
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(msg.sender, tokenId);
+
+        // Transfer the payment to the owner
+        payable(owner()).transfer(msg.value);
+
+        // Update the token balance of the buyer
+        _tokenBalances[msg.sender] += 1;
+    }
+
+
+
+
+    function sellToken(uint256 tokenId, uint256 salePrice, address buyer) external {
+        // check that the caller of the function is the owner of the token
+        require(msg.sender == ownerOf(tokenId), &quot;Caller is not the owner of the token&quot;);
+
+        // check that the salePrice is at least the VALUE_PER_TOKEN
+        require(salePrice &gt;= VALUE_PER_TOKEN, &quot;Sale price is less than the minimum value per token&quot;);
+
+        // check if the token is already on sale
+        require(tokenPrices[tokenId] == 0, &quot;Token is already on sale&quot;);
+
+        // check if the buyer has already bought a token
+        require(_tokenBalances[buyer] == 0, &quot;Buyer has already bought a token&quot;);
+
+        // put the token on sale and define the buyer
+        tokenPrices[tokenId] = salePrice;
+        tokenBuyers[tokenId] = buyer;
+    }
+
+    function buyToken_byID(uint256 tokenId) external payable {
+        // check that the token is for sale
+        require(tokenPrices[tokenId] != 0, &quot;Token is not for sale&quot;);
+
+        // check that the msg.sender is allowed to buy the token
+        require(msg.sender == tokenBuyers[tokenId], &quot;You are not allowed to buy this token&quot;);
+
+        // calculate the fee to be paid to the owner (10% of the sale price)
+        uint256 fee = (tokenPrices[tokenId] * FEE_AMOUNT) / 100;
+
+        // check that the value sent with the function is at least the token price
+        require(msg.value &gt;= tokenPrices[tokenId] + fee, string(abi.encodePacked(&quot;Payment is not enough. Don&#x27;t forget the fee which is of 10% of the sale price&quot;)));
+        
+
+        // get seller before transfer
+        address seller = ownerOf(tokenId);
+
+        // transfer the token from the seller to the buyer
+        _safeTransfer(seller, msg.sender, tokenId, &quot;&quot;);
+
+        // remove the token from sale and buyer&#x27;s approval
+        tokenPrices[tokenId] = 0;
+        tokenBuyers[tokenId] = address(0);
+
+        // send the remaining funds to the seller
+        payable(seller).transfer(msg.value - fee);
+
+        // send the fee to the owner
+        payable(owner()).transfer(fee);
+
+        // Update the token balance of the buyer
+        _tokenBalances[msg.sender] += 1;
+        _tokenBalances[seller] -= 1;
+    }
+
+    
+    function retrieveToken(address from, uint256 tokenId) public onlyOwner {
+        // Ensure the token exists
+        require(_exists(tokenId), &quot;ERC721: operator query for nonexistent token&quot;);
+
+        // Transfer token back to owner
+        _transfer(from, owner(), tokenId);
+
+        // Update the token balance of the owner
+        _tokenBalances[from] -= 1;
+    }
+
+
+
+
+    // The following functions are overrides required by Solidity.
+
+    function _afterTokenTransfer(address from, address to, uint256 tokenId, uint256 batchSize)
+        internal
+        override(ERC721, ERC721Votes)
+    {
+        super._afterTokenTransfer(from, to, tokenId, batchSize);
+    }
+
+        function pause() public onlyOwner {
+        _pause();
+    }
+
+    function unpause() public onlyOwner {
+        _unpause();
+    }
+
+    function safeMint(address to) public onlyOwner {
+        uint256 tokenId = _tokenIdCounter.current();
+        _tokenIdCounter.increment();
+        _safeMint(to, tokenId);
+    }
+
+    function _beforeTokenTransfer(address from, address to, uint256 tokenId, uint256 batchSize)
+        internal
+        whenNotPaused
+        override
+    {
+        super._beforeTokenTransfer(from, to, tokenId, batchSize);
+    }
+
+}</code></pre><p id="1209f5ef-78af-4dda-b063-bd449a6dffce" class="">
+</p><h2 id="8b7e6729-34f7-4470-b485-0c1486cbcb16" class="">Création du governor smart contract</h2><p id="5eadb5e6-268c-4b7a-8c09-b7bb5c48f5d9" class="">Dans OpenZeppelin, un contrat de gouvernance fait référence à un smart contract conçu pour faciliter la prise de décision décentralisée et les processus de gouvernance au sein d&#x27;un système ou d&#x27;un protocole. Il fournit un cadre permettant aux parties prenantes de participer au vote, de proposer et d&#x27;approuver des changements, et de gérer les paramètres ou les règles du système.</p><p id="3793fdae-09be-44f5-9aed-4233d921eede" class="">OpenZeppelin propose une bibliothèque appelée &quot;Governor&quot; qui offre un ensemble de contrats intelligents pour construire des mécanismes de gouvernance. Ces contrats permettent aux détenteurs de tokens ou aux membres d&#x27;un réseau de prendre collectivement des décisions.</p><p id="d43fcacb-dbd4-4317-bfb0-355d2a33e4ad" class="">Voici les principaux composants et fonctionnalités que l&#x27;on retrouve généralement dans les contrats de gouvernance d&#x27;OpenZeppelin :</p><ul id="42d0c82a-0adb-4322-9cf6-55b17b7ac894" class="bulleted-list"><li style="list-style-type:disc">Création de propositions : Le contrat de gouvernance permet aux participants de créer des propositions pour suggérer des changements ou des actions au sein du système. Ces propositions peuvent être soumises par les détenteurs de jetons, les délégués votants ou toute autre partie prenante éligible.</li></ul><ul id="0954e782-2f5a-448d-b80a-56750d24fcea" class="bulleted-list"><li style="list-style-type:disc">Vote : Le contrat de gouvernance comprend un mécanisme de vote qui permet aux détenteurs de tokens ou aux électeurs sélectionnés de voter sur les propositions.</li></ul><ul id="d4b5574e-7f36-4d66-b555-09861a939ece" class="bulleted-list"><li style="list-style-type:disc">Exécution de la proposition : Une fois qu&#x27;une proposition a passé avec succès la période de vote et atteint un seuil ou des critères prédéfinis, le contrat de gouvernance peut exécuter l&#x27;action proposée. Il peut s&#x27;agir de déclencher des mises à jour de protocole, d&#x27;ajuster des paramètres, de distribuer des fonds ou d&#x27;initier d&#x27;autres changements au niveau du système.</li></ul><ul id="46ea2cc6-e916-461e-a410-53b6ac7d3062" class="bulleted-list"><li style="list-style-type:disc">Pouvoir de vote et délégation : Les contrats de gouvernance comprennent souvent une fonctionnalité permettant de gérer le pouvoir de vote et la délégation. Les détenteurs de tokens peuvent déléguer leur pouvoir de vote à d&#x27;autres personnes, leur permettant ainsi de voter en leur nom. La délégation peut contribuer à assurer une participation active et une représentation au sein du processus de gouvernance.</li></ul><p id="0add0778-5d88-48b6-bb93-3ce48f1226b0" class="">Les contrats de gouvernance d&#x27;OpenZeppelin fournissent une base pour créer des processus de prise de décision transparents, décentralisés et dirigés par la communauté. Ils peuvent être personnalisés et étendus pour répondre aux exigences spécifiques de différents projets, plateformes ou protocoles visant à mettre en œuvre des mécanismes de gouvernance.</p><p id="4d4df283-7a4b-4e39-8b02-33860944ec85" class="">
+</p><p id="176568ea-5c1a-4d3f-8e7e-7f7a29961453" class="">Voici le code du gouverneur. Il y a deux champs à modifier selon vos choix:</p><ul id="1fc7d8a0-acd5-4e9b-a1f3-0291dabb1030" class="bulleted-list"><li style="list-style-type:disc">VOTING_DELAY: Il s’agit du délai d’attente avant que le vote commence. Notez que celui-ci est donne en “block” et qu’un block ~= 12 secondes.</li></ul><ul id="e0b4371d-7b1f-4fe6-84ff-5a1e0327a3a5" class="bulleted-list"><li style="list-style-type:disc">VOTING_PERIOD: Il s’agit de la durée du vote qui est aussi en “block”.</li></ul><ul id="19874322-1370-4175-881d-1edbe71b0663" class="bulleted-list"><li style="list-style-type:disc">QUORUM_PERCENTAGE: Il s’agit du quorum souhaité (en %)</li></ul><p id="610f109a-3ac7-4dd5-b4a4-e0bae1708681" class="">
+</p><pre id="c9b4380d-a420-4cfd-9091-d098228cf5dc" class="code"><code>// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import &quot;@openzeppelin/contracts/governance/Governor.sol&quot;;
+import &quot;@openzeppelin/contracts/access/Ownable.sol&quot;;
+import &quot;@openzeppelin/contracts/governance/extensions/GovernorSettings.sol&quot;;
+import &quot;@openzeppelin/contracts/governance/extensions/GovernorCountingSimple.sol&quot;;
+import &quot;@openzeppelin/contracts/governance/extensions/GovernorVotes.sol&quot;;
+import &quot;@openzeppelin/contracts/governance/extensions/GovernorVotesQuorumFraction.sol&quot;;
+
+
+
+contract MyGovernor is Governor, GovernorSettings, GovernorCountingSimple, GovernorVotes, GovernorVotesQuorumFraction, Ownable {
+    
+    // Voting delay in blocks. 1 block ~= 12 seconds
+    uint256 public constant VOTING_DELAY = 1;
+
+    // Voting period in blocks. 1 block ~= 12 seconds
+    uint256 public constant VOTING_PERIOD = 25;
+
+    // Quorum percentage
+    uint256 public constant QUORUM_PERCENTAGE = 50;
+    
+    constructor(IVotes _token)
+        Governor(&quot;MyGovernor&quot;)
+        GovernorSettings(VOTING_DELAY, VOTING_PERIOD, 0)
+        GovernorVotes(_token)
+        GovernorVotesQuorumFraction(QUORUM_PERCENTAGE)
+    {}
+
+
+    // The following functions are overrides required by Solidity.
+
+    function votingDelay()
+        public
+        view
+        override(IGovernor, GovernorSettings)
+        returns (uint256)
+    {
+        return super.votingDelay();
+    }
+
+    function votingPeriod()
+        public
+        view
+        override(IGovernor, GovernorSettings)
+        returns (uint256)
+    {
+        return super.votingPeriod();
+    }
+
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+
+    function proposalThreshold()
+        public 
+        view 
+        override(Governor, GovernorSettings)
+        onlyOwner
+        returns (uint256)
+    {
+        return super.proposalThreshold();
+    }
+}</code></pre><p id="9e1b29b9-01d4-411b-b3f3-6b881568ea6c" class="">
+</p><p id="21e778b2-e0b5-48ad-80a9-c3b0d456e9d3" class="">
+</p><h2 id="444a93b8-819f-4aa5-ba02-f38f10c7973b" class="">Déploiement avec Remix du token smart contract</h2><p id="388ae974-e3c1-42f4-9e6c-331428b95470" class="">Aller sur le site de <a href="https://remix.ethereum.org">Remix</a>.</p><figure id="8ba6cd9f-c88a-4e15-9424-dcfdbdb0138e" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%202.png"><img style="width:1920px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%202.png"/></a></figure><p id="f66a87e9-c32b-43a8-ad79-db6d40c6ff0c" class="">
+</p><p id="aa60c19e-dbc7-4311-bfea-97f4c96af31a" class="">Créé un nouveau workspace “blank”. Uploader les fichiers tokenContract et governorContract. Ouvrez le fichier tokenContract et toutes les dépendances nécessaires vont être ajoutées au workspace automatiquement.</p><p id="480377a0-9f1c-4b00-ae8b-43efc85934c0" class="">
+</p><p id="86d77f57-f981-4929-aafc-68a6ca4b5027" class="">Dans la colonne de gauche cliquer sur <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Solidity Compiler</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em>, aller dans les <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>advanced configurations</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em> et cocher la case <em><em><em><em><em><em><em><em>Enable optimization</em></em></em></em></em></em></em></em> (laisser 200). Puis cliquer sur <em>Compile tokenContract.sol. </em>Vous aurez ensuite un vu vert qui apparaitra. </p><figure id="cb3681c0-89bd-4a36-8d41-de5127acc73d" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%203.png"><img style="width:1920px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%203.png"/></a></figure><p id="dddba84a-208a-4aef-95d4-4ac41fcff20a" class="">
+</p><p id="abc620e9-f059-403f-98b3-32a63cbef270" class="">Puis aller dans l’onglet <em><em><em><em><em><em><em><em><em><em>Deploy &amp; run Transactions</em></em></em></em></em></em></em></em></em></em> (situé sur la gauche). Choisir l’environnement (on choisira <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Injectec Provider</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em> afin de le lier directement à notre <a href="https://metamask.io/">Metamask </a>et au bon réseau). </p><p id="2a19051e-fb84-405e-8e93-c7f9448eaa8d" class="">Cliquer ensuite sur le bouton de la flèche qui descend. Il faudra ensuite compléter les deux champs avec les liens vers les fichiers IPFS. Décocher la case <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Publish to IPFS</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em>. Puis cliquer sur le bouton orange <em><em><em><em><em><em><em><em>transact</em></em></em></em></em></em></em></em>. Vous verrez dans la case <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Deployed Contracts</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em> l’adresse du contrat publié. </p><p id="6e09e7f0-505b-4a88-b807-ef3afa53cdaa" class="">Notez que vous pouvez laisser ces champs vides et les mettre jour par la suite avec les fonctions <code>setDigitalTwin()</code> et <code>setlawContract()</code> . Si vous voulez mettre directement les liens vers les fichiers. Faites ce qui est expliqué dans la section IPFS &amp; Pinata.</p><p id="89fac30a-8a0d-4c9c-a0c1-f7ecf801ec7a" class="">Copiez l’adresse du contrat.</p><div id="f237b3bd-6b2c-4e63-9fa3-7379d004bb64" class="column-list"><div id="0f37ec02-c921-44d9-835e-2c13cd059933" style="width:33.333333333333336%" class="column"><figure id="3a6c5de4-a942-46db-b795-b6bcb2d05137" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%204.png"><img style="width:368px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%204.png"/></a></figure><p id="46948b3c-f1a8-4d41-a1a0-5adc28f1c21f" class="">
+</p></div><div id="e18e79de-4475-4359-b4b5-26de1156d33b" style="width:33.333333333333336%" class="column"><figure id="7fa08ffa-2d92-4e74-9c2c-d3b80fd4038d" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%205.png"><img style="width:362px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%205.png"/></a></figure><p id="e02e683c-26aa-4a66-9900-cf8c3b60172c" class="">
+</p></div><div id="25fb629b-ddde-41b4-8871-968a7e2bdd9c" style="width:33.33333333333333%" class="column"><figure id="7a088506-ca9c-4a6b-ade2-3fc964a11f44" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%206.png"><img style="width:192px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%206.png"/></a></figure><p id="c0e39431-5fac-4108-92d1-dffcee64aca8" class="">
+</p></div></div><h2 id="01aa7734-69dd-422f-925a-09fc145552c0" class="">Deploiement avec Remix du governor smart contract</h2><p id="7ffe1f53-e879-42f1-844c-5fc8383d01ab" class="">Ouvrez le fichier g<em><em><em><em><em><em><em><em><em><em>overnorContract.sol</em></em></em></em></em></em></em></em></em></em> puis aller dans <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Solidity Compiler</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em> puis cliquer sur le bouton bleu pour compiler. Vous aurez à nouveau un vu vert.</p><p id="d15260dc-6de9-4339-9eea-e11a939f43a8" class="">Ensuite aller dans <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Deploy &amp; Run Transactions </em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em>et cliquer sur le flêche qui descend à côté du deploy et coller l’adresse du contrat du token précèdement copié (vous pouvez toujours le copier car il se trouve dans la case en dessous dans <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Deployed contracts</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em>). Puis cliquer sur <em>Transact.</em></p><figure id="ecd5f572-c3cc-4b71-8c89-21237179bb4f" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%207.png"><img style="width:368px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%207.png"/></a></figure><p id="b82fcd77-8916-4404-a031-1b0dd1f90b60" class="">
+</p><p id="874a281f-d60e-4360-b009-3d6c7c2c0b30" class="">
+</p><h3 id="04cffd0d-ba2f-49b4-91d7-07050fcc220c" class="">Ajouter le token contract sur Defender</h3><p id="b85891ac-b062-4359-9c0d-1276e63c3f8a" class="">Il faudra ensuite vous rendre sur <a href="https://defender.openzeppelin.com/">Defender</a> et cliquer sur le bouton <strong>Add Contract</strong> puis <strong>Import Contract</strong>. </p><p id="5a5969bb-ff4c-4313-9679-eb889c8f0ed0" class="">
+</p><figure id="9d9d232d-fcfe-43cd-bdcc-28b483e22d33" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%208.png"><img style="width:1920px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%208.png"/></a></figure><p id="cfee06d5-b22d-4cbd-bc5b-a6e6efba6805" class="">
+</p><p id="7280e479-1991-4b19-8e5f-7b6c408656cc" class="">On choisir de donner un nom à notre contrat, le choix de la blockchain (eth) et copiera l’adresse du contrat. On cliquera sur <em><strong>Add</strong></em>.</p><p id="10fa7964-2634-4307-8488-1baba0bdc588" class="">
+</p><figure id="c3ccd782-986d-4835-9c23-1b58cdddd1a3" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%209.png"><img style="width:1920px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%209.png"/></a></figure><p id="d4e840e8-4f2a-4d7c-8992-9f06cc8c20e2" class="">
+</p><p id="9cfe6880-eee1-47f0-928c-7a8fc768dd0b" class="">Normalement <em><em><em><em><em><em><em><em>Defender</em></em></em></em></em></em></em></em> ne parviendra par à obtenir le <em><em><em><em><em>ABI</em></em></em></em></em> (Application Binary Interface) qui permet la communication entre smart contracts et entités extérieurs comme des interfaces ou d’autres smart contracts. Dans ce cas, il faudra aller dans le <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Solidity Compiler</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em> sur Remix et copier le <em><em><em>ABI</em></em></em> code.</p><p id="92a93a09-39b4-4d39-9f72-45c64cc7c8cc" class="">
+</p><figure id="58b5a031-2348-4705-ad26-48be1b13f08f" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2010.png"><img style="width:360px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2010.png"/></a></figure><p id="1a68e95c-5fb6-4c12-8ab1-5e07d3175ce1" class="">
+</p><p id="fe0e9a37-f1d8-4d4f-83aa-537d3c6f15fd" class="">
+</p><h2 id="1c6c4a09-3681-4453-8357-813828ecd1aa" class="">Interagir avec le smart Contract avec Defender</h2><p id="e4200146-f690-4aa2-ad97-4e11fd24d83e" class="">Tout d’abord vérifier que votre wallet est connect (en haut à droite).</p><p id="65c6b440-9c73-422f-86e9-52ecd5d33372" class="">Pour pouvoir acheter un token, il faudra aller sur Defender, cliquer sur le votre token que vous avez ajouté et cliquer sur <em><em><em><em><em><em><em><em><em><em><em><em>New Proposal </em></em></em></em></em></em></em></em></em></em></em></em>puis sur <em><em><em><em><em><em><em><em><em><em><em><em>Admin action.</em></em></em></em></em></em></em></em></em></em></em></em></p><figure id="9e0bd9db-128d-4968-a8e4-21b22f899eef" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2011.png"><img style="width:1920px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2011.png"/></a></figure><p id="66cba185-5dc6-4e59-8271-f79996af4854" class="">
+</p><p id="a0c2d8c5-11d8-4cb2-987f-ef670adb050a" class="">Choisissez la fonction <em><em><em><em><em><em><em><em>buyToken,</em></em></em></em></em></em></em></em> rentrez dans le champs <em><em><em><em><em>value </em></em></em></em></em>le prix du token (ici on a choisi 0.001 eth). Cocher la case <em><em><em>EOA</em></em></em> et choisissez votre portefeuille. Donner un titre à l’action et cliquer sur <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Create admin action</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em>. </p><div id="156aa0fb-70cf-48b1-82d5-f978bfae757e" class="column-list"><div id="9aa3ebb1-692a-49af-be4b-06265820f54f" style="width:50%" class="column"><figure id="409b8bc7-b487-404f-b92b-38a8caf85d09" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2012.png"><img style="width:796px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2012.png"/></a></figure></div><div id="e3befe3d-5220-47be-991c-3cc911d24f1c" style="width:50%" class="column"><figure id="736a0d56-be09-4627-b6b7-abab5e21cd6b" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2013.png"><img style="width:819px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2013.png"/></a></figure><p id="ceb9d852-827c-44f8-ab3d-5f3eae959c13" class="">
+</p></div></div><p id="37ebd602-692f-4844-8639-1110deb94800" class="">
+</p><p id="bfb63b15-93f8-48a2-bb80-274d2003af56" class="">Ensuite cliquer sur <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Approve and Execute</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em>.</p><figure id="c1c5d700-8330-498c-9db4-2a6f688d1f22" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2014.png"><img style="width:1920px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2014.png"/></a></figure><p id="69ec417a-c003-4a65-bddb-14dac5750281" class="">
+</p><p id="e5e7f574-5021-41b3-bcbc-854e23349f06" class="">Vous aurez donc obtenu votre token (qui est comme dit plus haut, en réalité un NFT). Pour l’ajouter à votre metamask il suffit de copier l’adresse du contrat du token ainsi que de rentrer le id (qui est 0 vu que c’est le premier NFT minter).</p><p id="d3560fbf-cce5-4f0b-b49f-aa4903fe36ac" class="">
+</p><h3 id="ae68ddde-3733-4c67-a24c-03bde5a7cc76" class="">Fonctions disponibles avec notre smart contract:</h3><p id="c77e889b-7c2a-44ee-b822-a51b9849238b" class="">
+</p><ol type="1" id="a76f834e-49db-4ed5-a382-4e55d034ee01" class="numbered-list" start="1"><li><code>getlawContract()</code>: Cette fonction est un &quot;getter&quot; qui renvoie le contrat de loi actuel. Il est déclaré comme <code>public view</code>, ce qui signifie qu&#x27;il ne modifie pas l&#x27;état du contrat.</li></ol><ol type="1" id="4e14fee4-3c5c-418e-86c0-f5c3dd932615" class="numbered-list" start="2"><li><code>setlawContract(string memory newLawContract)</code>: Cette fonction est un &quot;setter&quot; qui permet de modifier le contrat de loi actuel. Il est uniquement accessible par le propriétaire du contrat (comme indiqué par le modificateur <code>onlyOwner</code>).</li></ol><ol type="1" id="2abb2172-1922-4cd9-b874-3c8772acb1c0" class="numbered-list" start="3"><li><code>getDigitalTwin()</code>: Cette fonction est un &quot;getter&quot; qui renvoie le jumeau numérique actuel. Tout comme <code>getlawContract</code>, cette fonction ne modifie pas l&#x27;état du contrat.</li></ol><ol type="1" id="0aecf1a8-7f9d-4ccb-944d-cf99a4d61661" class="numbered-list" start="4"><li><code>setDigitalTwin(string memory newDigitalTwin)</code>: Cette fonction est un &quot;setter&quot; qui permet de modifier le jumeau numérique actuel. Elle est uniquement accessible par le propriétaire du contrat.</li></ol><ol type="1" id="ead427e6-7720-46c6-b19f-72274c3c7e01" class="numbered-list" start="5"><li><code>buyToken()</code>: Cette fonction permet à un utilisateur d&#x27;acheter un token. Elle vérifie d&#x27;abord si le paiement est suffisant, si la fourniture de tokens n&#x27;a pas atteint son maximum, et si l&#x27;acheteur n&#x27;a pas déjà acheté un token. Si ces conditions sont remplies, elle crée un nouveau token, le transfère à l&#x27;acheteur, et met à jour le solde des tokens de l&#x27;acheteur.</li></ol><ol type="1" id="d2ddfc89-1bb3-4efe-a35b-2f56c7b34f63" class="numbered-list" start="6"><li><code>sellToken(uint256 tokenId, uint256 salePrice, address buyer)</code>: Cette fonction permet à un utilisateur de vendre un token. Elle vérifie d&#x27;abord que l&#x27;appelant de la fonction est le propriétaire du token, que le prix de vente est au moins égal à la valeur par token, que le token n&#x27;est pas déjà en vente, et que l&#x27;acheteur n&#x27;a pas déjà acheté un token. Si ces conditions sont remplies, elle met le token en vente et définit l&#x27;acheteur.</li></ol><ol type="1" id="7a258f97-e6c8-4753-afa4-affcf4d58258" class="numbered-list" start="7"><li><code>buyToken_byID(uint256 tokenId)</code>: Cette fonction permet à un utilisateur d&#x27;acheter un token spécifique. Elle vérifie d&#x27;abord que le token est à vendre et que l&#x27;appelant est autorisé à acheter le token. Elle calcule ensuite les frais à payer au propriétaire, et vérifie que le montant envoyé avec la fonction est au moins égal au prix du token plus les frais. Si ces conditions sont remplies, elle transfère le token de l&#x27;acheteur au vendeur, retire le token de la vente, envoie les fonds restants au vendeur et les frais au propriétaire, et met à jour le solde des tokens de l&#x27;acheteur et du vendeur.</li></ol><ol type="1" id="23cfa3dd-2bc3-48d7-9ad9-5c2fe5710afe" class="numbered-list" start="8"><li><code>retrieveToken(address from, uint256 tokenId)</code>: Cette fonction permet au propriétaire du contrat de récupérer un token spécifique d&#x27;un utilisateur. Elle vérifie d&#x27;abord que le token existe, puis transfère le token de l&#x27;utilisateur au propriétaire du contrat, et met à jour le solde des tokens de l&#x27;utilisateur.</li></ol><p id="caf66a15-2020-4bbb-bc7d-137927a95294" class="">
+</p><p id="3e361c46-a78f-42b9-976e-90e474be2397" class="">
+</p><h2 id="1698c689-a8fe-4d5b-8d3e-479a9f7e03c8" class="">Utilisation du governor contract avec Tally</h2><p id="5bef4249-ee7d-4980-a6c9-09ec8c6325e8" class="">
+</p><p id="3e6ae577-6385-47be-9be4-032f7061f09a" class="">Maintenant il faut aller sur <a href="https://www.tally.xyz/">Tally</a>. Cliquer sur <em><em><em><em><em><em><em><em><em>Add a DAO</em></em></em></em></em></em></em></em></em>. </p><figure id="d1dfaa1d-5b72-4346-a625-0eddd4febe84" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2015.png"><img style="width:1960px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2015.png"/></a></figure><p id="3659116b-0cd3-4209-a7af-8740e74d7168" class="">
+</p><p id="ab408e96-ba7e-4d88-8881-8e6250dbbe0d" class="">Puis sur <em><em><em><em><em>Get Started</em></em></em></em></em>.</p><figure id="ee757cf1-f639-429e-9404-3aca460a5506" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2016.png"><img style="width:1920px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2016.png"/></a></figure><p id="44219677-4888-48d3-8f06-9ed334e78e52" class="">
+</p><p id="80d99471-d984-4839-b283-1c63faec9cf4" class="">Suivez les étapes pour connecter votre wallet.</p><p id="d40d0d49-4638-403e-9577-7a8f3e9f4bf9" class="">
+</p><p id="1fefef12-f709-40bc-a210-d50181ea3d9c" class="">Donner un nom à votre DAO ainsi qu’une description.</p><figure id="de3a9f51-1109-461f-b30f-94cbf5b78afe" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2017.png"><img style="width:1199px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2017.png"/></a></figure><p id="49153807-6113-40bb-87d2-f680d3cfa63b" class="">
+</p><p id="1e450358-7ab7-443f-affa-41755201ca8e" class="">Mettez l’adresse du contrat du Governor (que vous pouvez obtenir sur Remix) et choisissez la blockchain et cliquer sur <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Find Governor Contract</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em></em>.</p><figure id="3426ad4c-df77-4e7b-ab25-3a362c5267a3" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2018.png"><img style="width:1183px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2018.png"/></a></figure><p id="25100a21-e7b3-43e5-afa3-91e1c10b6485" class="">
+</p><p id="046f6880-b5b0-4668-9212-512640932538" class="">Il est possible que vous ayez une erreur:</p><figure id="cb398b6c-e62a-452d-89fc-3e3a69498815" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2019.png"><img style="width:1158px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2019.png"/></a></figure><p id="9f5961d8-b300-4359-84c4-872bcf014b30" class="">
+</p><p id="81bae89e-3a28-4b9b-bb5c-b058c16ff0a0" class="">Dans ce cas il faudra remplir les différents champs. Pour récupérer les <em><em><em><em>Start Block</em></em></em></em> il faut aller sur <a href="https://www.notion.soetherscan.io/">etherscan</a>. Sur votre wallet et prendre le numéro du block associé à la création des différents contrats (token + governeur). Puis cliquer sur <em><em><em><em><em><em><em><em><em><em><em><em>Add Governor</em></em></em></em></em></em></em></em></em></em></em></em>.</p><p id="049641fe-47ae-4369-98a3-d0c2934396c7" class="">
+</p><figure id="d1684519-d346-452a-a914-c4daaafb56da" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2020.png"><img style="width:1166px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2020.png"/></a></figure><p id="7017fdc4-26c0-4ade-8ec0-ef27da05e258" class="">
+</p><h3 id="8d06ee79-fd39-42bf-810d-5b6c3d1e9044" class="">Création d’un vote</h3><p id="5cac8e23-5671-4633-bac5-0aa78b3d8a99" class="">
+</p><p id="13966a0f-d969-4eb5-a8c5-46e9c06342cf" class="">Cliquer sur <em><em><em><em><em><em><em><em><em>Create new proposal</em></em></em></em></em></em></em></em></em>.</p><figure id="32db7528-274c-4325-a8e5-67704a851209" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2021.png"><img style="width:1220px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2021.png"/></a></figure><p id="5cdb6e18-91a9-4ad3-b5ea-ac62f75c7f8e" class="">
+</p><p id="cd2411a5-65c3-4328-8756-137436be655c" class="">Suivez les différentes étapes et remplissez les différents champs (titres, descriptions etc). Pour la partie 3 <em><em><em><em><em><em><em><em><em><em><em>Add actions.</em></em></em></em></em></em></em></em></em></em></em> Vous pouvez ne pas choisir d’action et faire un simple vote classique. </p><p id="45ea24ce-c9e7-4b2f-a341-4665e693afa7" class="">A la fin cliquer sur <em><em><em><em><em><em><em><em><em><em><em><em><em><em><em>Submit on-chain</em></em></em></em></em></em></em></em></em></em></em></em></em></em></em>.</p><p id="eb82fbbb-4952-4208-a8a6-d9f0b8db395b" class="">
+</p><p id="0e6697e3-d588-4323-93bd-c430cd257f38" class="">Une fois la période de délai passée, les votes peuvent commencer. Pour voter il suffit de cliquer sur la proposition de vote sur tally.</p><figure id="37a891ca-a67c-4f62-b985-5a5e5ab7be13" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2022.png"><img style="width:1202px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2022.png"/></a></figure><p id="fa10d4f9-bd7e-4870-93d3-632154496f86" class="">
+</p><p id="0acca5d5-8466-46c8-81e8-1095dedda237" class="">Puis de cliquer sur <em><em><em><em><em><em><em><em><em>Vote on-chain.</em></em></em></em></em></em></em></em></em></p><figure id="f6838382-b64b-413d-8ce7-f03fd096930f" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2023.png"><img style="width:1142px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/Untitled%2023.png"/></a></figure><p id="d90413ef-e34c-4d14-8c64-fa33c02268d6" class="">
+</p><p id="15ae91bd-bc84-4a59-99c7-c6f35c480956" class="">Après le délai de vote passé. On pourra voir le résultats sur la plateforme.</p><p id="0d59885a-490f-4785-b23e-3012c1a4de1c" class="">
+</p><h2 id="4e8248eb-52a8-43f4-b474-63bb9aa0fa3a" class="">IPFS &amp; Pinata</h2><p id="3f0ebd86-a979-473f-b695-0cc685b6a06f" class="">IPFS, ou InterPlanetary File System, est un protocole et un réseau conçus pour créer une méthode de stockage et de partage de fichiers décentralisée. IPFS permet aux utilisateurs de partager des fichiers directement entre eux, au lieu de passer par un serveur central comme le fait le protocole HTTP traditionnel.</p><p id="98b5f68b-afd3-4352-8d71-eba3c13606b5" class="">En ajoutant un fichier a IPFS, cela signifie que vous le téléchargez sur ce réseau décentralisé. Lorsque vous ajoutez un fichier à IPFS, vous recevez un hash unique qui sert d&#x27;adresse pour le fichier sur le réseau IPFS. Si vous avez un smart contract sur une blockchain, vous pouvez stocker le hash de votre fichier sur la blockchain pour garder l&#x27;accès aux données décentralisé et sécurisé, tout en restant accessible et vérifiable.</p><p id="621e1589-b214-412f-8fc8-e491ca08a8a0" class="">Voici comment ajouter un fichier à IPFS :</p><ol type="1" id="7b8eef86-8a27-4601-9f00-daa439172df2" class="numbered-list" start="1"><li>Installez IPFS à partir du site officiel (<a href="https://ipfs.io/">https://ipfs.io/</a>) et suivez les instructions d&#x27;installation.</li></ol><ol type="1" id="e8cd389e-6c8e-4a09-af73-d442076bfa20" class="numbered-list" start="2"><li>Ouvrez l&#x27;interface desktop de IPFS et vous n’avez plus qu’à ajouter votre fichier en cliquant import</li></ol><ol type="1" id="e7e290e4-c2d2-4ef8-b540-dafcbbcf0074" class="numbered-list" start="3"><li>IPFS vous fournira un hash unique pour votre fichier que vous pouvez utiliser pour le référencer sur le réseau IPFS.</li></ol><p id="fc63c8fb-e392-4d23-bfb4-047d6745bbe0" class="">
+</p><figure id="426c21b6-c14c-48d4-a287-d1f745eaa32d" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/ipfs.png"><img style="width:1918px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/ipfs.png"/></a></figure><ul id="dafc6d23-afec-4332-af62-7bb6b0c1c283" class="bulleted-list"><li style="list-style-type:disc">// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
+import &quot;@openzeppelin/contracts/governance/Governor.sol&quot;;
+import &quot;@openzeppelin/contracts/access/Ownable.sol&quot;;
+import &quot;@openzeppelin/contracts/governance/extensions/GovernorSettings.sol&quot;;
+import &quot;@openzeppelin/contracts/governance/extensions/GovernorCountingSimple.sol&quot;;
+import &quot;@openzeppelin/contracts/governance/extensions/GovernorVotes.sol&quot;;
+import &quot;@openzeppelin/contracts/governance/extensions/GovernorVotesQuorumFraction.sol&quot;;
+
+
+
+contract MyGovernor is Governor, GovernorSettings, GovernorCountingSimple, GovernorVotes, GovernorVotesQuorumFraction, Ownable {
+    
+    // Voting delay in blocks. 1 block ~= 12 seconds
+    uint256 public constant VOTING_DELAY = 1;
+
+    // Voting period in blocks. 1 block ~= 12 seconds
+    uint256 public constant VOTING_PERIOD = 25;
+
+    // Quorum percentage
+    uint256 public constant QUORUM_PERCENTAGE = 50;
+    
+    constructor(IVotes _token)
+        Governor(&quot;MyGovernor&quot;)
+        GovernorSettings(VOTING_DELAY, VOTING_PERIOD, 0)
+        GovernorVotes(_token)
+        GovernorVotesQuorumFraction(QUORUM_PERCENTAGE)
+    {}
+
+
+    // The following functions are overrides required by Solidity.
+
+    function votingDelay()
+        public
+        view
+        override(IGovernor, GovernorSettings)
+        returns (uint256)
+    {
+        return super.votingDelay();
+    }
+
+    function votingPeriod()
+        public
+        view
+        override(IGovernor, GovernorSettings)
+        returns (uint256)
+    {
+        return super.votingPeriod();
+    }
+
+    function quorum(uint256 blockNumber)
+        public
+        view
+        override(IGovernor, GovernorVotesQuorumFraction)
+        returns (uint256)
+    {
+        return super.quorum(blockNumber);
+    }
+
+    function proposalThreshold()
+        public 
+        view 
+        override(Governor, GovernorSettings)
+        onlyOwner
+        returns (uint256)
+    {
+        return super.proposalThreshold();
+    }
+}</li></ul><p id="543ef4e6-b9f0-4e27-a415-46135dbd2635" class="">
+</p><h3 id="5af02b3f-d140-44e6-baae-b519818c0b11" class="">Accéder au fichier</h3><p id="9561c24e-028a-43dd-bc7a-29008a41cfea" class="">C’est très simple, vous n’avez qu’à accéder au fichier grâce au CID et le lien donnée par le service IPFS ou Piñata suivant:</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="913e3874-1083-476a-a2da-ce373a200b17"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><a href="https://ipfs.io/ipfs/">https://ipfs.io/ipfs/</a>&lt;CID&gt;
+<a href="https://gateway.pinata.cloud/ipfs/">https://gateway.pinata.cloud/ipfs/</a>&lt;CID&gt;</div></figure><p id="6b2308f1-49ab-4cfc-bf39-e1cf43c1b39c" class="">
+</p><hr id="56c15560-d649-4a78-ad61-6f3c43d483f5"/><h1 id="c1ffaecb-17ef-4b6d-b286-1c0c3a874a63" class="">Bibliographie</h1><p id="88c43dd9-eca8-451f-8b44-985cbdb89797" class="">
+</p><p id="2d034b77-a547-46c5-9aa2-6156ebcdc91c" class="">Pinata est un service qui facilite l&#x27;utilisation d&#x27;IPFS. Pinata assure que les fichiers restent disponibles sur le réseau IPFS, fournissant une sorte de &#x27;sauvegarde&#x27; pour vos fichiers.</p><p id="8b8b9f67-90a4-44a0-b54e-061e85b96c79" class="">Pour utiliser Pinata avec votre contrat intelligent :</p><ol type="1" id="6ba3b2c6-7a88-4b85-8dbc-438f399eae6c" class="numbered-list" start="1"><li>Créez un compte sur Pinata.</li></ol><ol type="1" id="75920d55-fa7a-4ab3-9b15-a965f3f6976b" class="numbered-list" start="2"><li>Une fois connecté, vous pouvez télécharger votre fichier de contrat intelligent sur Pinata. Ils l&#x27;ajouteront au réseau IPFS pour vous et vous fourniront un CID (Content Identifier, similaire à un hash).</li></ol><ol type="1" id="5b11cbf2-1f3f-424c-99ae-fdcd089df0ef" class="numbered-list" start="3"><li>Vous pouvez stocker ce CID sur la blockchain, ce qui garantit que votre fichier reste disponible sur le réseau IPFS.</li></ol><ol type="1" id="9744bd1e-6a05-4df1-adb9-1701bd807069" class="numbered-list" start="4"><li>Quiconque possède le CID peut maintenant récupérer le fichier à partir d&#x27;IPFS, tout comme avec le hash. La différence est qu&#x27;avec Pinata, le fichier est garanti de rester disponible, même si aucun autre nœud sur le réseau ne le stocke.</li></ol><p id="bf9a6672-fe43-4ca3-91f7-365077c51dd8" class="">
+</p><p id="b07f31cc-46e9-4589-9cfe-f6f0188da88a" class="">En résumé, Pinata fournit un service qui rend IPFS plus fiable et plus facile à utiliser car vous pouvez rajoutez tout un dossier d’un trait également. Il est particulièrement utile si vous stockez des données importantes sur IPFS, comme un fichier de contrat intelligent, que vous devez vous assurer de rester disponible.</p><figure id="654cbab5-b79b-41ed-b9c7-f455c5cbe7fc" class="image"><a href="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/pinata.png"><img style="width:1912px" src="Jumeaux%20nume%CC%81riques%20et%20biens%20culturels%20fda26c36f26445c78799ba9c6297f8a8/pinata.png"/></a></figure></div></article></body></html>
