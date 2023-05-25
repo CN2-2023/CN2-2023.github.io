@@ -1,15 +1,11 @@
 # Jumeaux numériques et biens culturels
 
-<div align="center" style="display:flex" display="inline-block">
- <p>
- <div style="flex:1;padding-right:2%;">
-  <a href="https://www.unige.ch/"><img alt="Universite de Genève" width="42%" style="display: inline-block;" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Unige_logo.png?raw-true"/></a>
- </div>
- <div style="flex:1;padding-left:2%;">
-  <a href="https://www.unige.ch/comprendre-le-numerique/"><img alt="Comprendre le numérique" width="42%" style="display: inline-block;" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/CLN_logo.png?raw-true"/></a>
- </div>
- </p>
-</div>
+<p align="middle">
+ <a href="https://www.unige.ch/"><img alt="Universite de Genève" width="45%" align="left" style="display: inline-block;" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Unige_logo.png?raw-true"/></a>
+ <a href="https://www.unige.ch/comprendre-le-numerique/"><img alt="Comprendre le numérique" width="45%" align="right" style="display: inline-block;" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/CLN_logo.png?raw-true"/></a>
+</p>
+
+<img align="middle" width="100%" height="1px" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Invisible?raw=true"/>
 
 ## Le cas
 
@@ -57,4 +53,4 @@ Claire LANDRY-BESSONNET
 
 <p align="middle"><a href="https://www.unige.ch/digital-clinics/projets-des-etudiants-digital-clinics/2023/jumeaux-numeriques-et-biens-culturels"><img alt="Page du projet" align="middle" width="25%" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/qr-code.png?raw=true"/></a></p>
 
-<p align="middle"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img alt="The team" align="middle" width="10px" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Invisible.png?raw=true"/></a></p>
+<p align="middle"><a href="https://imgur.com/a/vApgFDj"><img alt="The team" align="middle" width="10px" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Invisible.png?raw=true"/></a></p>
