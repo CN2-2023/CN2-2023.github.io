@@ -1,8 +1,11 @@
 # Jumeaux numériques et biens culturels
 
 <p align="middle">
- <a href="https://www.unige.ch/"><img alt="Universite de Genève" align="left" width="48%" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Unige_logo.png?raw-true"/></a>
- <a href="https://www.unige.ch/comprendre-le-numerique/"><img alt="Comprendre le numérique" align="right" width="48%" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/CLN_logo.png?raw-true"/></a>
+ <a href="https://www.unige.ch/"><img alt="Universite de Genève" align="left" width="46%" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Unige_logo.png?raw-true"/></a>
+ &nbsp;
+ &nbsp;
+ &nbsp;
+ <a href="https://www.unige.ch/comprendre-le-numerique/"><img alt="Comprendre le numérique" align="right" width="46%" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/CLN_logo.png?raw-true"/></a>
 </p>
 &nbsp;
 &nbsp;
