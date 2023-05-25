@@ -1,6 +1,6 @@
 # Jumeaux numériques et biens culturels
 
-<p align="middle">
+<p align="top">
  <a href="https://www.unige.ch/"><img alt="Universite de Genève" align="left" width="46%" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Unige_logo.png?raw-true"/></a>
  &nbsp;
  &nbsp;
