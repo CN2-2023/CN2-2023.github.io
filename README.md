@@ -1,26 +1,15 @@
 # Jumeaux numériques et biens culturels
 
-<p align="top">
- <a href="https://www.unige.ch/"><img alt="Universite de Genève" align="left" width="46%" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Unige_logo.png?raw-true"/></a>
- <a href="https://www.unige.ch/comprendre-le-numerique/"><img alt="Comprendre le numérique" align="right" width="46%" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/CLN_logo.png?raw-true"/></a>
-</p>
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+<div align="center" style="display:flex" display="inline-block">
+ <p>
+ <div style="flex:1;padding-right:2%;">
+  <a href="https://www.unige.ch/"><img alt="Universite de Genève" width="42%" style="display: inline-block;" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/Unige_logo.png?raw-true"/></a>
+ </div>
+ <div style="flex:1;padding-left:2%;">
+  <a href="https://www.unige.ch/comprendre-le-numerique/"><img alt="Comprendre le numérique" width="42%" style="display: inline-block;" src="https://github.com/CN2-2023/CN2-2023.github.io/blob/main/.Images/CLN_logo.png?raw-true"/></a>
+ </div>
+ </p>
+</div>
 
 ## Le cas
 
